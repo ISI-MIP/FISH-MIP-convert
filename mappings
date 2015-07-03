@@ -1,0 +1,22 @@
+#!/bin/bash
+
+function map_VAR() {
+    case $VAR in
+        tsb)
+            STD_NAME="total_system_biomass_density"
+            LONG_NAME="total system biomass density"
+            UNIT="g C m-2"
+            ;;
+    esac
+}
+
+function map_MODEL() {
+    case $MODEL in
+        ewe)
+            INSTITUTE="Dalhousie University"
+            CONTACT="Tyler Eddy <tyler.eddy@dal.ca>"
+            COMMENT1="no oa" # ?
+            COMMENT2="COMMENT2"
+            ;;
+    esac
+}
